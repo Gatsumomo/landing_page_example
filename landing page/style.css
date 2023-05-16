@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.separator{
+    font-size: 7px;
+    background-color: rgb(218, 192, 157);
+}
+
+.logo{
+    font-family: 'Libre Barcode 39 Text', cursive;
+	font-size: 5rem; 
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+}
+
+.user_control_wrapper{
+	display: flex;
+}
+
+.icono_user{
+	font-size: 3rem;
+	margin-right: 1rem;
+}
+
+.user_control{
+	font-family: 'Roboto Mono', monospace;
+}
+
+/*NAV BAR*/
+
+/*nav_link>li*/
+.nav_wrapper, .nav_list{
+	display: flex;
+}
+
+.nav_wrapper{
+	justify-content: space-between;
+	/*arriba abajo izq der*/
+	/*el padding empuja del borde hacia adentro y margin del borde hacia afuera*/
+	padding: 1rem 2rem;
+	background-color: orange;
+}
+
+.nav_link{
+	/*rem se calcula a medida de la visualizacion, el px no
+	SON PROPORCIONALES A LA PANTALLA Y NO VALORES FIJOS
+	el porcentaje tambien es buen uso
+	1rem: 16px
+	toma por referencia el archivo html - elemento mas basico
+	em toma por referencia al contenedor
+	*/
+	font-size: 1.2rem;
+	margin-left: 0.5rem; 
+}
+
+.link{
+	text-decoration: none;
+	color:rgb(35, 28, 63);
+}
+
+.link:hover{
+	color: antiquewhite;
+}
+
+.content_wrapper{
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(35, 28, 63);
+	text-align: center;
+}
+.content_left{
+	display: flex;
+	width: 60%;
+	border: 1px solid black;
+	margin: 2rem 2rem;
+	align-items: center;
+}
+.content_text{
+	color: antiquewhite;
+	width: 60%;
+	padding: 2rem;
+}
+.img_css{
+	width: 40%;
+	padding: 3rem;
+	height: 30rem;
+}
+.content_right{
+	width: 40%;
+	border: 1px solid black;
+	margin: 2rem 2rem;
+}
+.img_camisa{
+	width: 60%;
+	padding: 3rem;
+}
+ 
+.latest_wrapper{
+	background-color: orange;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin: 5rem auto;
+	padding: 1rem;
+}
+.latest_subtitle{
+	background-color: rgb(35, 28, 63);
+	margin-top: 3rem;
+	text-align: center;
+	color: antiquewhite;
+	padding: 1rem;
+}
+
+.latest_subtitle_text{
+	font-size: 2rem;
+}
+
+.latest_articles{
+	margin-top: 5rem;
+	display: flex;
+	background-color: rgb(35, 28, 63);
+}
+        
+.latest_text{
+	color: antiquewhite;
+	margin-bottom: 2rem;
+}
+
+.latest_group{
+	text-align: center;
+}
+
+.footer_wrapper{
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(35, 28, 63);
+	color: antiquewhite;
+}
+
+.footer_link{
+	text-decoration: none;
+	color:antiquewhite
+}
+
+.footer_link:hover{
+	color: rgb(35, 28, 63);
+}
+
+.footer_nav_list{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer_nav, .footer_logo, .footer_user{
+	margin: 2rem 0;
+}
+
+.footer_user{
+	display: flex;
+}
+
+.latest_subtitle, .latest_articles{
+	margin: 2rem 2rem;
+}
